@@ -1,0 +1,15 @@
+h1{font-family: "Doppio One", sans-serif;
+  font-weight: 400;
+  font-style: normal}
+
+body{font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+   font-size: .95em;
+   padding: 3px
+}
+p{border: 5px solid firebrick;
+    border-radius:3px;
+}
+   #list{font-weight: 400}
