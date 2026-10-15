@@ -1,0 +1,122 @@
+/*
+foreground #2B5748
+background #9CB080
+*/
+*{box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+a{text-decoration:none;
+}
+a:hover{color:#76885c;
+}
+
+title{display:none;
+}
+
+
+header{display:flex;
+    flex-flow:row;
+    background-color: #2B5748;
+    padding:10px;
+    width:100vw;
+    flex-shrink: 3;
+}
+
+a > img{width: auto;
+    max-height: 50px;
+    padding: 0px 15px 0px 0px;
+}
+h1{text-align: left;
+    font-family: "Paytone One", sans-serif;
+    flex-shrink: 1;
+  font-weight: 400;
+  font-style: normal;
+  font-size:22pt;
+  color:#9CB080;
+  width:90vw
+}
+
+ul{display: flex;
+flex-shrink: 4;
+    flex-flow:row;
+    justify-content: space-between;
+    background-color: #9CB080;
+    border:2px solid #2B5748;
+    border-radius: 10px;
+}
+li{list-style-type: none;
+    font-family: "Fugaz One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-left:2px solid #2B5748;
+    padding:5px 10px;
+    font-size: 20px;
+}
+li > a{color:#2B5748;
+}
+li:first-child{border:none;
+}
+
+
+body{text-align: center;
+    background-color: #9CB080;
+    font-family: "Lalezar", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size:19pt;
+    color:#2B5748;
+    height:90vh;
+}
+body > p{padding: 20px}
+
+p > a{color:#2B5748;
+}
+
+
+footer{position:absolute;
+bottom:0;
+left: 0;
+right:0;
+height:8vh;
+width:100vw;
+font-family: "Bai Jamjuree", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size:15px;
+padding:20px;
+color:#9CB080;
+  background-color: #2B5748;
+    text-align: center;
+    
+}
+
+
+@media (max-width:700px) or (max-height:375px){
+    header{flex-flow:column;
+        align-items:center;
+    }
+    a >img{width: auto;
+        max-height: 125px;
+        padding: 0px 0px 10px 0px;
+    }
+    h1{width:100vw;
+        text-align:center;
+        padding:0 10px 10px 10px;
+    }
+    ul{width:150px;
+        flex-flow:column;
+        align-items:center;
+    }
+    li{width:150px;
+        border-top:2px solid;
+        text-align:center;
+    }
+    body{text-align:center;
+        height:100vh;
+    }
+    footer{position:static;
+        min-height:8vh;
+    }
+
+}
