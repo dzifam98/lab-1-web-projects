@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse events</title>
+</head>
+<body>
+    <div id= "button" style="background-color: blue; color:white; border-radius: 3px; padding: 15px; width: 300px ;text-align: center;">Click Me!</div>
+    <div id="viewport" style="position:absolute ; top: 200px; width: 75vh; height: 400px; border: 1px solid; text-align: center;"> viewport</div>
+
+    <script>
+        const thebutton = document.getElementById("button");
+        const viewport = document.getElementById("viewport");
+        function click(event){
+            thebutton.style.backgroundColor = "red";
+            thebutton.textContent = "Ow!"
+        };
+        function hover(event){
+            thebutton.style.backgroundColor = "yellow";
+            thebutton.textContent = "Actually, don't click!"
+        };
+        function notclick(event){
+            thebutton.style.backgroundColor = "lightgreen";
+            thebutton.style.color = "black";
+            thebutton.textContent = "Phew!"
+        };
+        function double(event){
+            thebutton.style.backgroundColor = "pink";
+            thebutton.style.color = "black";
+            thebutton.textContent = "Double Trouble!"
+        };
+        function iseeyou(event){
+            thebutton.textContent = "I see you!"
+            thebutton.style.color = "black";
+            thebutton.style.backgroundColor = "lightblue"
+        };
+        function reset(event){
+            thebutton.textContent = "Click Me!"
+            thebutton.style.backgroundColor = "blue"
+        }
+        thebutton.addEventListener("click", click);
+        thebutton.addEventListener("mouseover", hover);
+        thebutton.addEventListener("mouseout", notclick);
+        thebutton.addEventListener("dblclick", double);
+        viewport.addEventListener("mouseover", iseeyou);
+        viewport.addEventListener("mouseout", reset);
+        
+    </script>
+</body>
+</html>
