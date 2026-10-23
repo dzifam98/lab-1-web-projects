@@ -78,20 +78,24 @@ body > p{padding: 20px;
     align-content: center;
 
 }
-.CharChild{
-    max-width: 20vw
+.CharChild{display: flex;
+    flex-flow:column wrap;
+    max-width: 20vw;
+    max-height: 30vh;
 }
 
-body img{
-    width: 170px;
+.CharChild img{
+    flex-grow:2;
     clip-path: circle(50%);
 }
+
 #Will{height: auto;}
 #Lieselotte{height:auto;}
 #Dallawan{height: auto;}
 #Duffy{height: auto;}
 
-body > div p{font-size: 15px;
+.CharChild p{flex-grow: 1;
+    font-size: 15px;
 font-family: "Bai Jamjuree", sans-serif;
 font-weight: 400;
 font-style: normal;}
