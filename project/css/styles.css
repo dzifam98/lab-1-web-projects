@@ -22,7 +22,7 @@ header{display:flex;
 
 /* For The Icon image only
 */
-a > img{width: auto;
+ #mainicon{width: auto;
     max-height: 50px;
     padding: 0px 15px 0px 0px;
 }

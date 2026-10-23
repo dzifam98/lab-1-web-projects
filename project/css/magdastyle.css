@@ -23,7 +23,7 @@ header{display:flex;
     flex-shrink: 3;
 }
 
-a > img{width: auto;
+ #mainicon{width: auto;
     max-height: 50px;
     padding: 0px 15px 0px 0px;
 }
@@ -80,7 +80,7 @@ body img{
     clip-path: circle(50%);
 }
 
-body >div p{font-size: 15px}
+body > div p{font-size: 15px}
 
 p > a{color:#2B5748;
 }
