@@ -68,7 +68,9 @@ body{text-align: center;
     color:#2B5748;
     height:90vh;
 }
-body > p{padding: 20px}
+body > p{padding: 20px;
+}
+body >div p{font-size: 15px}
 
 p > a{color:#2B5748;
 }

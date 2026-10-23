@@ -67,6 +67,14 @@ body{
     height:90vh;
 }
 body > p{padding: 20px}
+body > ul{
+    padding: 20px;
+    margin-left:50px
+}
+body > ul a{color:#E4B1F0;
+}
+body > ul ul{margin-left: 10px;}
+
 
 p > a{color:#E4B1F0;
 }
@@ -102,7 +110,7 @@ color:#261452;
         text-align:center;
         padding:0 10px 10px 10px;
     }
-    ul{width:150px;
+    nav ul{width:150px;
         flex-flow:column;
         align-items:center;
         border:none
@@ -116,8 +124,10 @@ color:#261452;
     
     body{text-align:center;
         height:100vh;
+        padding-bottom: 30px;
     }
     footer{position:static;
+        
         min-height:8vh;
     }
 
