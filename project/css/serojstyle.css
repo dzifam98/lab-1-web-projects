@@ -1,1 +1,130 @@
+/*
+foreground 4BB8FA
+background C4E2F5
+*/
+*{box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+a{text-decoration:none;
+}
+a:hover{color:#C4E2F5;
+}
 
+title{display:none;
+}
+
+
+header{display:flex;
+    flex-flow:row;
+    background-color: #4BB8FA;
+    padding:10px;
+    width:100vw;
+    flex-shrink: 3;
+}
+
+ #mainicon{width: auto;
+    max-height: 50px;
+    padding: 0px 15px 0px 0px;
+}
+h1{font-family: "Paytone One", sans-serif;
+    flex-shrink: 1;
+  font-weight: 400;
+  font-style: normal;
+  font-size:22pt;
+  color:#2C5EAD;
+  width:90vw
+}
+
+header ul{display: flex;
+flex-shrink: 4;
+    flex-flow:row;
+    justify-content: space-between;
+    background-color: #4BB8FA;
+    border:2px solid #2C5EAD;
+    border-radius: 10px;
+}
+header li{list-style-type: none;
+    font-family: "Fugaz One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-left:2px solid #2C5EAD;
+    padding:5px 10px;
+    font-size: 20px;
+}
+li > a{color:#2C5EAD;
+}
+li:first-child{border-left:none;
+}
+
+body{
+    background-color: #C4E2F5;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 400;
+    font-style: normal;;
+    font-size:15pt;
+    color:#2C5EAD;
+    height:90vh;
+}
+body > p{padding: 20px}
+
+.the_masonry{display: flex;
+flex-flow: row wrap;
+align-items: flex-start;
+min-width: 20vw;}
+
+.masonrychild{flex-grow:1;
+height:40px}
+
+footer{position:absolute;
+bottom:0;
+left: 0;
+right:0;
+height:8vh;
+width:100vw;
+font-family: "Bai Jamjuree", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size:15px;
+padding:20px;
+color:#C4E2F5;
+  background-color: #2C5EAD;
+    text-align: center;
+    
+}
+
+
+@media (max-width:700px) or (max-height:375px){
+    header{flex-flow:column;
+        align-items:center;
+    }
+    a >img{width: auto;
+        max-height: 125px;
+        padding: 0px 0px 10px 0px;
+    }
+    h1{width:100vw;
+        text-align:center;
+        padding:0 10px 10px 10px;
+    }
+    nav ul{width:150px;
+        flex-flow:column;
+        align-items:center;
+        border:none
+    }
+    header li{width:150px;
+        border:2px solid #2C5EAD;
+        border-radius: 3px;
+        text-align:center;
+    }
+    header li:first-child{border-left:solid 2px #2C5EAD}
+    
+    body{text-align:center;
+        height:100vh;
+        padding-bottom: 30px;
+    }
+    footer{position:static;
+        
+        min-height:8vh;
+    }
+
+}
