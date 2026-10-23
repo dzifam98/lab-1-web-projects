@@ -78,6 +78,9 @@ body > p{padding: 20px;
     align-content: center;
 
 }
+.CharChild{
+    max-width: 20vw
+}
 body img{
     width: 170px;
     clip-path: circle(50%);
