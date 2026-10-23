@@ -82,13 +82,14 @@ body > p{padding: 20px;
 .CharChild{display: flex;
     flex-flow:column nowrap;
     min-width: 30vw;
+    max-width: 45vw;
     min-height: 35vh;
     align-items: center;
     align-content: center;
 }
 
 .CharChild img{align-self: center;
-    flex-shrink:2;
+    flex-shrink:1;
     width: 200px;
     height:200px;
     clip-path: circle(50%);
@@ -145,9 +146,6 @@ color:#9CB080;
     body{text-align:center;
         height:100vh;
     }
-    footer{position:static;
-        min-height:8vh;
-    }
 
     .CharFlex{
     display:flex;
@@ -155,8 +153,12 @@ color:#9CB080;
     justify-content: center;
     min-width: 100vw;
     min-height: 30vh;
-    gap:40px
+    gap:50px
 
 }
+    footer{position:static;
+        min-height:8vh;
+    }
+
 
 }
