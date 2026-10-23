@@ -73,7 +73,13 @@ body > ul{
 }
 body > ul a{color:#E4B1F0;
 }
-body > ul ul{margin-left: 10px;}
+
+body > ul ul{margin-left: 15px;}
+
+body > ul ul ul{margin-left: 15px;
+font-family: "Bai Jamjuree", sans-serif;
+font-weight: 400;
+font-style: normal;}
 
 
 p > a{color:#E4B1F0;
