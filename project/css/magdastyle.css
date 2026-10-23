@@ -85,7 +85,7 @@ body > p{padding: 20px;
 }
 
 .CharChild img{
-    flex-shrink:2;
+    flex-shrink:3;
     clip-path: circle(50%);
 }
 
@@ -94,7 +94,7 @@ body > p{padding: 20px;
 #Dallawan{height: auto;}
 #Duffy{height: auto;}
 
-.CharChild p{flex-shrink: 1;
+.CharChild p{flex-shrink: 2;
     font-size: 15px;
 font-family: "Bai Jamjuree", sans-serif;
 font-weight: 400;
