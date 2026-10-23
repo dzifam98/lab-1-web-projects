@@ -80,7 +80,8 @@ body > p{padding: 20px;
 }
 .CharChild{display: flex;
     flex-flow:column wrap;
-    max-width: 20vw
+    max-width: 20vw;
+    align-content: center;
 }
 
 .CharChild img{
