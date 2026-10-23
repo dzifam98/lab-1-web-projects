@@ -81,8 +81,8 @@ body > p{padding: 20px;
 }
 .CharChild{display: flex;
     flex-flow:column nowrap;
-    max-width: 20vw;
-    max-height: 35vh;
+    min-width: 20vw;
+    min-height: 35vh;
     align-items: center;
     align-content: center;
 }
