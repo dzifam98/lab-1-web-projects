@@ -73,7 +73,10 @@ body > p{padding: 20px;
 /* Div Images and Captions */
 .CharFlex{
     display:flex;
-    flex-flow:row
+    flex-flow:row wrap;
+    justify-content: space-around;
+    align-content: center;
+
 }
 body img{
     width: 170px;
