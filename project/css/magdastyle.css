@@ -87,10 +87,11 @@ body > p{padding: 20px;
 }
 
 .CharChild img{align-self: center;
+    flex-shrink:2;
     width: 200px;
     height:200px;
     clip-path: circle(50%);
-    padding:45px
+    gap:45px
 }
 
 body > div p{font-size: 15px;
