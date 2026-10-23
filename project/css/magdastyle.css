@@ -81,10 +81,12 @@ body > p{padding: 20px;
 .CharChild{display: flex;
     flex-flow:column wrap;
     max-width: 20vw;
+    max-height: 35vh;
+    align-items: center;
     align-content: center;
 }
 
-.CharChild img{
+.CharChild img{align-self: center;
     width: 200px;
     height:200px;
     clip-path: circle(50%);
