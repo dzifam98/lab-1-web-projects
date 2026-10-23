@@ -70,10 +70,16 @@ body{text-align: center;
 }
 body > p{padding: 20px;
 }
+/* Div Images and Captions */
+.CharFlex{
+    display:flex;
+    flex-flow:row
+}
 body img{
     width: 170px;
     clip-path: circle(50%);
 }
+
 body >div p{font-size: 15px}
 
 p > a{color:#2B5748;
