@@ -98,6 +98,7 @@ color:#261452;
     
 }
 
+/* For Mobile Devices*/
 
 @media (max-width:700px) or (max-height:375px){
     header{flex-flow:column;

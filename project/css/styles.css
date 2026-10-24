@@ -94,7 +94,7 @@ width:100vw;
     
 }
 
-/* For Mobile Devices (max-width for portrait, max-height for landscape)
+/* For Mobile Devices/Smaller Viewport (max-width for portrait, max-height for landscape)
 */
 @media (max-width:700px) or (max-height:375px){
     header{flex-flow:column;
