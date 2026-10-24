@@ -115,6 +115,7 @@ color:#C4E2F5;
         align-items:center;
         border:none
     }
+    /* navigation bar options turn into rounded rectangles */
     header li{width:150px;
         border:2px solid #2C5EAD;
         border-radius: 3px;

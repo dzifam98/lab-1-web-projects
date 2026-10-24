@@ -67,15 +67,16 @@ body{
     height:90vh;
 }
 body > p{padding: 20px}
+/* begin list */
 body > ul{
     padding: 20px;
     margin-left:50px
 }
 body > ul a{color:#E4B1F0;
 }
-
+/* subpoints */
 body > ul ul{margin-left: 15px;}
-
+/* sub-subpoints */
 body > ul ul ul{margin-left: 15px;
 font-family: "Bai Jamjuree", sans-serif;
 font-weight: 400;
@@ -121,6 +122,8 @@ color:#261452;
         align-items:center;
         border:none
     }
+    /* navigation bar options turn into bubbled (very rounded) rectangles */
+    
     header li{width:150px;
         border:2px solid #261452;
         border-radius: 10px;
