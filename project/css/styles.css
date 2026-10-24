@@ -76,7 +76,7 @@ body{
     color:#261452;
     height:90vh;
 }
-body > p{padding:0 45px}
+body p{padding:0 45px}
 p > a{color:#261452;
 }
 /*End of Body Elements, Start of Footer Elements
