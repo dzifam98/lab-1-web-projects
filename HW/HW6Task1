@@ -133,6 +133,7 @@
 
 
   <script>
+/*Declare variables outside the function to keep values*/
 let num1;
 let num2;
 let ans;
@@ -149,13 +150,17 @@ document.getElementById("diceBtn").addEventListener("click", function(num1, num2
     document.getElementById("submit").addEventListener("click", function(){
       if(document.getElementById("userAns").value == ans){
         document.getElementById("feedback").innerText = "✅ Correct!";
+ /* Update Score Counter*/
         document.getElementById("score").innerText = `Correct answers: ${correctcounter} | Incorrect Answers: ${incorrectcounter}`;
         correctcounter = correctcounter + 1;
       }
       else{document.getElementById("feedback").innerText =  `❌ Incorrect, the correct answer is ${ans}.`;
            incorrectcounter = incorrectcounter + 1;
           }
+ /* Update Score Counter*/
         document.getElementById("score").innerText = `Correct answers: ${correctcounter} | Incorrect Answers: ${incorrectcounter}`});
+
+ /* Original Score Counter*/
  document.getElementById("score").innerText = `Correct answers: ${correctcounter} | Incorrect Answers: ${incorrectcounter}`;
   
   </script>
