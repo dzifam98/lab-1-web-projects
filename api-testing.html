@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetching and api</title>
+</head>
+<body>
+    
+    <script>
+        
+        let form = document.createElement("form");
+            let button = document.createElement("button");
+           
+
+            form.action = "#";
+            button.type = "button";
+            button.textContent = "Generate Profile"
+            
+
+        const getImage = async()=>{
+            try{
+            let addImage = await fetch("https://randomuser.me/api/");
+            addImage = await addImage.json();
+            console.log(addImage.results[0].picture.large);
+
+            let img = document.createElement('img');
+            img.src = addImage.results[0].picture.large;
+            img.alt = "random";
+            document.body.appendChild(img);
+            let info = document.createElement("p");
+            info.textContent = `My name is ${addImage.results[0].name.first} ${addImage.results[0].name.last}. My email is ${addImage.results[0].email} and my phone number is ${addImage.results[0].phone}.`;
+        
+            document.body.appendChild(info);
+                }
+                catch{(error)=> console.log(error)}
+        }
+
+        button.addEventListener("click", getImage);
+            form.appendChild(button);
+            document.body.appendChild(form);
+    </script>
+</body>
+</html>
